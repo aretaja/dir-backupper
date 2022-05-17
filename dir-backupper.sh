@@ -142,7 +142,7 @@ elif [[ "$day_of_week" -eq 1 ]]
 then
     target="weekly"
 fi
-dir="$target"
+dir="${dpdir}_${target}"
 
 # Set lockfile
 touch "$lock_f";
