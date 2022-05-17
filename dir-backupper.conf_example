@@ -1,0 +1,15 @@
+# Local source dir for backup
+local_dir="/var/tmp/influx_bak"
+
+# Backup destination host
+dhost="mybackuphost.com"
+
+# Backup destination ssh port
+dport="2222"
+
+# Backup destination ssh user
+duser="backupuser"
+
+# Backup destination basedir where (daily|weekly|monthly) directories
+# will be created
+ddir="archives"
