@@ -10,6 +10,9 @@ dport="2222"
 # Backup destination ssh user
 duser="backupuser"
 
+# Backup destination preffix for (daily|weekly|monthly) directories.
+dpdir="mydir"
+
 # Backup destination basedir where (daily|weekly|monthly) directories
 # will be created
 ddir="archives"

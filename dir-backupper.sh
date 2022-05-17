@@ -118,6 +118,12 @@ then
     exit 1
 fi
 
+if [[ -z "$dpdir" ]] || [[ ! "$dpdir" =~ ^[[:alnum:]_\ \.-]+$ ]]
+then
+    write_log ERROR "Config - Backup destination preffix missing or incorrect"
+    exit 1
+fi
+
 if [[ -z "$ddir" ]] || [[ ! "$ddir" =~ ^[[:alnum:]_\ \.-]+$ ]]
 then
     write_log ERROR "Config - Backup destination basedir missing or incorrect"
